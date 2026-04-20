@@ -1,9 +1,6 @@
 # TradeIQ
 TradeIQ is an AUREL-powered Apex/Tradovate trade analyzer that turns CSV exports into performance stats, strategy breakdowns, timing analysis, and actionable coaching.
 
-TradeIQ
-TradeIQ is an AUREL-powered Apex/Tradovate trade analyzer that turns CSV exports into performance stats, strategy breakdowns, timing analysis, and actionable coaching.
-
 Features
 Upload Tradovate CSV exports
 Review net P&L, win rate, profit factor, drawdown, and streaks
