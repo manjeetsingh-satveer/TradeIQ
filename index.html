@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TradeIQ - Trade Analyzer</title>
+<title>TradeIQ - Trade Analyzer </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -531,7 +531,7 @@ footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: cente
       <span class="logo-dot"></span>
       TradeIQ
     </div>
-    <div class="nav-tag"> TRADOVATE</div>
+    <div class="nav-tag"> Future Trading </div>
   </nav>
 </div>
 
@@ -540,7 +540,7 @@ footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: cente
     <div class="hero">
       <div class="hero-kicker">AI-powered trade analysis</div>
       <h1>Know exactly<br>why you're <em>losing</em><br>or <em>winning</em></h1>
-      <p class="hero-sub">Drop your Tradovate CSV. Get instant trade analysis of your strategies, entry/exit quality scores, and a coaching plan built from your actual data.</p>
+      <p class="hero-sub">Drop your CSV. Get instant trade analysis of your strategies, entry/exit quality scores, and a coaching plan built from your actual data.</p>
       <div class="features-row">
         <div class="feat-chip"><span class="dot"></span>Strategy breakdown</div>
         <div class="feat-chip"><span class="dot"></span>Entry / exit ratings</div>
@@ -550,12 +550,12 @@ footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: cente
       <div class="drop-wrap" id="dropZone">
         <div class="drop-icon">&#8659;</div>
         <div class="drop-title">Drop your CSV here</div>
-        <div class="drop-sub">Tradovate export · any date range · futures only</div>
+        <div class="drop-sub">CSV export · any date range · futures only</div>
         <button class="btn-accent" type="button" onclick="document.getElementById('fileInput').click()">Browse file</button>
         <span class="demo-link" id="demoLink">or load demo data -&gt;</span>
         <input type="file" id="fileInput" accept=".csv">
         <div class="howto-strip">
-          <div class="howto-step"><div class="howto-num">1</div>Tradovate -&gt; Performance</div>
+          <div class="howto-step"><div class="howto-num">1</div> CSV -&gt; Performance</div>
           <div class="howto-arrow">-&gt;</div>
           <div class="howto-step"><div class="howto-num">2</div>Select date range</div>
           <div class="howto-arrow">-&gt;</div>
@@ -692,7 +692,7 @@ footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: cente
         <div id="coachContent">
           <div class="ai-loading" id="aiLoader">
             <div class="pulse-ring"></div>
-            <div class="ai-loading-label">AUREL is analyzing your trading patterns...</div>
+            <div class="ai-loading-label">tradeIQ is analyzing your trading patterns...</div>
           </div>
         </div>
       </div>
@@ -758,7 +758,7 @@ function handleFile(file) {
   reader.onload = (e) => {
     const parsed = parseCSV(e.target.result);
     if (!parsed.length) {
-      alert("Could not parse this CSV. Make sure it's a Tradovate export.");
+      alert("Could not parse this CSV. Make sure it's a CSV export.");
       return;
     }
     trades = parsed;
